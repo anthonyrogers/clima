@@ -161,7 +161,7 @@
 					</dict>
 					<dict>
 						<key>INIntentResponseCodeFormatString</key>
-						<string>${val}</string>
+						<string>Completed</string>
 						<key>INIntentResponseCodeFormatStringID</key>
 						<string>6fw5h3</string>
 						<key>INIntentResponseCodeName</key>
@@ -197,7 +197,7 @@
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentUserConfirmationRequired</key>
-			<false/>
+			<true/>
 			<key>INIntentVerb</key>
 			<string>Go</string>
 		</dict>

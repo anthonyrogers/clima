@@ -44,7 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         
-    
+   
+        print("this is the user activity type \(userActivity.activityType)")
+     
         
         return true
     }

@@ -19,8 +19,8 @@
 		992AA03522B803BD00BC1E5D /* ExtensionForIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 992AA02E22B803BD00BC1E5D /* ExtensionForIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		992AA03E22B8281100BC1E5D /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992AA03D22B8281100BC1E5D /* Intents.framework */; };
 		992AA04422BAAE1C00BC1E5D /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 992AA04322BAAE1C00BC1E5D /* Intents.intentdefinition */; };
-		992AA04622BBDDD000BC1E5D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AA04522BBDDD000BC1E5D /* City.swift */; };
 		992AA04822BC03AF00BC1E5D /* SiriOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AA04722BC03AF00BC1E5D /* SiriOptionsTableViewController.swift */; };
+		992AA06B22C3B3DA00BC1E5D /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992AA06A22C3B3DA00BC1E5D /* DeepLink.swift */; };
 		AD05C7BE20EBD80E00915CD8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD05C7BD20EBD80D00915CD8 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -64,8 +64,8 @@
 		992AA03222B803BD00BC1E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		992AA03D22B8281100BC1E5D /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		992AA04322BAAE1C00BC1E5D /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
-		992AA04522BBDDD000BC1E5D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		992AA04722BC03AF00BC1E5D /* SiriOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriOptionsTableViewController.swift; sourceTree = "<group>"; };
+		992AA06A22C3B3DA00BC1E5D /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		9985E5A822AA8F97007D5014 /* Clima.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clima.entitlements; sourceTree = "<group>"; };
 		AD05C7BD20EBD80D00915CD8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D0A377AFB80FB75CA11117F0 /* Pods_Clima.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clima.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +140,7 @@
 			children = (
 				63E28AF01B99C35700FBF6E0 /* WeatherDataModel.swift */,
 				992AA04322BAAE1C00BC1E5D /* Intents.intentdefinition */,
-				992AA04522BBDDD000BC1E5D /* City.swift */,
+				992AA06A22C3B3DA00BC1E5D /* DeepLink.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -352,9 +352,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E28AF11B99C35700FBF6E0 /* WeatherDataModel.swift in Sources */,
+				992AA06B22C3B3DA00BC1E5D /* DeepLink.swift in Sources */,
 				992AA04822BC03AF00BC1E5D /* SiriOptionsTableViewController.swift in Sources */,
 				63E28AF91B99C36100FBF6E0 /* WeatherViewController.swift in Sources */,
-				992AA04622BBDDD000BC1E5D /* City.swift in Sources */,
 				63E28AD11B99C32400FBF6E0 /* AppDelegate.swift in Sources */,
 				992AA04422BAAE1C00BC1E5D /* Intents.intentdefinition in Sources */,
 				63E28AF61B99C36100FBF6E0 /* ChangeCityViewController.swift in Sources */,

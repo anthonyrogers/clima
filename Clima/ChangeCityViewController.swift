@@ -81,36 +81,24 @@ class ChangeCityViewController: UIViewController, INUIAddVoiceShortcutViewContro
     @IBAction func mainPageButtonPressed(_ sender: UIButton) {
         
      
-            let intent = WeatherCityIntent()
-            
-            
-            let shortcut = INShortcut(intent: intent)
-//        let interaction = INInteraction(intent: intent, response: nil)
-//
-//        interaction.donate { (error) in
-//
-//        }
-//
-        let vc = INUIAddVoiceShortcutViewController(shortcut: shortcut!)
-        vc.delegate = self
-        self.present(vc, animated: true, completion: nil)
-             
-       
     }
     
     @IBAction func secondPageButtonPressed(_ sender: UIButton) {
         
         let intent = ShowTSVIntent()
-        intent.test = "this is the url"
         let shortcut = INShortcut(intent: intent)
 
         let vc = INUIAddVoiceShortcutViewController(shortcut: shortcut!)
         vc.delegate = self
-        
-        let interaction = INInteraction(intent: intent, response: nil)
-        interaction.donate { (error) in
-            print("donated")
-        }
+
+//        let coder = NSCoder()
+//        coder.encode(DeepLink(url: "this is a url"), forKey: "url")
+//        let response = INIntentResponse(coder: coder)
+        //will allow you to donate a response or an object to the intent
+//        let interaction = INInteraction(intent: intent, response: response)
+//        interaction.donate { (error) in
+//            print("donated")
+//        }
         self.present(vc, animated: true, completion: nil)
 
     }
